@@ -81,15 +81,15 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Question Paper Generator
                 </div>
 
-                <button>
+                <button class="btn btn-primary">
                     <a href=" {{ url('/add_question') }}">Add a Question</a>
                 </button>
 
                 <button>
-                    <a href="{{ route('generate') }}">Generate a question paper</a>
+                    <a href="{{ route('generate') }}" target="_blank">Generate a question paper</a>
                 </button>
 
             </div>

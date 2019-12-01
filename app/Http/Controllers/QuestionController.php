@@ -27,8 +27,8 @@ class QuestionController extends Controller
     {
         $getRandomQuestion = Question::all()->random(10);
 
-        $pdf = \PDF::loadview('question_paper_format', compact('getRandomQuestion'));
+        $pdf = \PDF::loadview('question_paper', compact('getRandomQuestion'));
 
-        return $pdf->stream('question_paper_format.pdf');
+        return $pdf->stream('question_paper.pdf');
     }
 }
