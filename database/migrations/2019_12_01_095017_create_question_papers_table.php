@@ -15,7 +15,7 @@ class CreateQuestionPapersTable extends Migration
     {
         Schema::create('question_papers', function (Blueprint $table) {
             $table->bigIncrements('id');
-
+            $table->mediumText('question_paper');
             $table->timestamps();
         });
     }
