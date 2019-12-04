@@ -24,3 +24,6 @@ Route::get('/add_question', 'QuestionController@index');
 Route::post('/add_question', ['as' => 'add_question', 'uses' => 'QuestionController@store']);
 
 Route::get('question_paper', ['as' => 'generate', 'uses' => 'QuestionController@getQuestionPaper']);
+
+Route::get('edit', ['as' => 'edit', 'uses' => 'QuestionController@editPDF']);
+

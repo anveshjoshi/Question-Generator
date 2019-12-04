@@ -92,6 +92,10 @@
                     <a href="{{ route('generate') }}" target="_blank">Generate a question paper</a>
                 </button>
 
+                <button>
+                    <a href="{{ route('edit') }}" target="_top">Add Image to PDF</a>
+                </button>
+
             </div>
         </div>
     </body>
