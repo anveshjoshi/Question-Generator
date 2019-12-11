@@ -58,7 +58,7 @@ class QuestionController extends Controller
         $pdf->useTemplate($tplIdx);
         $pdf->SetFont('Arial', 'B', '24');
         $pdf->SetXY(0,50);
-        $pdf->Image('C:\Users\Prajwol\Desktop\college_logo.png',40,10,-100);
+        $pdf->Image('C:\xampp\htdocs\Question Generator\college_logo.png',40,10,-100);
         $time = time();
         $pdf->Output('F', $time.'_new.pdf');
 
